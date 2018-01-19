@@ -12,6 +12,6 @@ We believe that communication is a skill that can always be improved; and that i
 
 We believe that everyone has ideas worth sharing.
 
-We believe that learning to better communicated will make the world a better place.
+We believe that learning to better communicate will make the world a better place.
 
 If you feel as we do, please join on this journey.  We'll all learn, and we'll all grow together.
