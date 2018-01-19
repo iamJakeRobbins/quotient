@@ -4,7 +4,7 @@ From the day we first begin learning language everything that we experience, eve
 
 In a very real way, we are not capable of having ideas, of learning, of living, without communication.
 
-And yet, it is so easy to ignore exactly how we communicate.  How we talk to one another.  How we write.  We are taught these skills early in life, and with everything going on around us, we forget to take the time to improve them.  
+And yet, it is so easy to ignore exactly how we communicate.  How we talk to one another.  How we write.  We are taught these skills early in life but, with everything going on around us, we forget to take the time to improve them.  
 
 This is a tremendous loss.  To each of us as individuals, to all of us as friends, coworkers, neighbors.  At the risk of sounding overly dramatic, this is a loss to all of humanity.
 
