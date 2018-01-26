@@ -26,7 +26,7 @@ const hiQuery = gql`
   users {
     _id
     login
-    password
+		password
   }
 
 }

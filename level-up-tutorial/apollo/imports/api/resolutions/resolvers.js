@@ -1,21 +1,15 @@
+import Users from "./resolutions";
+
+Users.insert({
+	login: "test res",
+	password: "test pwd"
+})
+
+
 export default {
 	Query: {
-		hi() {
-			return "Welcome to Quotient!"
-	},
 		users(){
-			return [
-		{
-			_id: "asdf",
-			login: "Bob",
-			password: "1234a"
-		},
-		{
-			_id: "erwasdf",
-			login: "Stan",
-			password: "42123"
-		},
-			];
+			return Users.find({}).fetch();
 		}
 	}
 
