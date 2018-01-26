@@ -1,0 +1,10 @@
+# Schema types and contents
+# id
+# login
+# password
+
+type User {
+	_id: String!
+	login: String!
+	password: String!
+}
