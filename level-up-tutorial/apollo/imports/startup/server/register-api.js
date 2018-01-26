@@ -18,7 +18,7 @@ type Query {
 const testResolvers = {
 	Query: {
 		hi() {
-			return "Welcome to Quotient!"
+			return "Here's a List of Users for Some Fucking Reason"
 		}
 	},
 }

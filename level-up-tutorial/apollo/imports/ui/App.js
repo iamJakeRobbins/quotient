@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import Navbare from './components/navbar.js'
 
-
-const App = ({data}) => {
+// class App extends React.Component{
+	const App = ({data}) => {
   // dataloading allows Apollo to change gears from loading to loaded
 if(data.loading) return null
-return (  <div>
-    <h1>{data.hi}</h1>
-    <ul>
+return (
+	<div>
+	<Navbare />
+	<h1>Welcome to the Site</h1>
+ 		<ul>
       {data.users.map(user => (
         <li key={user._id}>
           {user.login}
@@ -18,6 +22,7 @@ return (  <div>
 </div>
 )
 }
+
 
 const hiQuery = gql`
 {

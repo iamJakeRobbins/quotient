@@ -1,8 +1,12 @@
 import Users from "./resolutions";
 
-Users.insert({
-	login: "test res",
-	password: "test pwd"
+// Users.insert({
+// 	login: "Test",
+// 	password: "master"
+// })
+
+Users.remove({
+
 })
 
 
@@ -12,5 +16,4 @@ export default {
 			return Users.find({}).fetch();
 		}
 	}
-
 };
