@@ -7,7 +7,7 @@ import ResolutionsSchema from '../../api/resolutions/Resolutions.graphql'
 // importing resolvers from another page
 import ResolutionsResolvers from '../../api/resolutions/resolvers'
 
-//testSchema is pulling in our different individual queries
+//testSchema is pulling in our different individual queries.
 const testSchema = 	`
 type Query {
 	hi: String!

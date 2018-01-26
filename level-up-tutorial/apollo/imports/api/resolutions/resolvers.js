@@ -1,19 +1,25 @@
 import Users from "./resolutions";
 
-// Users.insert({
-// 	login: "Test",
-// 	password: "master"
+
+// Users.remove({
+//
 // })
-
-Users.remove({
-
-})
 
 
 export default {
 	Query: {
 		users(){
 			return Users.find({}).fetch();
+		}
+	},
+
+	Mutation: {
+		createUser(){
+			console.log("got here");
+			// const userID = Users.insert({
+			// 	login: "Test",
+			// 	password: "master"
+			// })
 		}
 	}
 };

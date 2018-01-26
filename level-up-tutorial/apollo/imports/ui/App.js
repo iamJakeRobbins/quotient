@@ -3,6 +3,7 @@ import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import Navbare from './components/navbar.js'
+import CreateUserForm from './components/createUserForm'
 
 // class App extends React.Component{
 	const App = ({data}) => {
@@ -19,6 +20,7 @@ return (
         </li>
       ))}
     </ul>
+	<CreateUserForm />
 </div>
 )
 }
