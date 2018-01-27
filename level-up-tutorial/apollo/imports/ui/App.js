@@ -6,39 +6,38 @@ import Navbare from './components/navbar.js'
 import CreateUserForm from './components/createUserForm'
 
 // class App extends React.Component{
-	const App = ({data}) => {
+	const App = ({loading, users}) => {
   // dataloading allows Apollo to change gears from loading to loaded
-if(data.loading) return null
+if(loading) return null
+
 return (
 	<div>
 	<Navbare />
-	<h1>Welcome to the Site</h1>
+	<h1>{users.hi}</h1>
  		<ul>
-      {data.users.map(user => (
+      {users.map(user => (
         <li key={user._id}>
           {user.login}
         </li>
       ))}
     </ul>
-	<CreateUserForm />
+	<CreateUserForm/>
 </div>
 )
 }
 
 
 const hiQuery = gql`
-{
+query Users {
 	hi
-
-  users {
+	users {
     _id
     login
-		password
   }
 
 }
 `;
 
-export default graphql(
-	hiQuery
-)(App);
+export default graphql(hiQuery, {
+	props: ({data}) =>({...data})
+})(App);

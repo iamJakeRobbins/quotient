@@ -14,12 +14,12 @@ export default {
 	},
 
 	Mutation: {
-		createUser(){
-			console.log("got here");
-			// const userID = Users.insert({
-			// 	login: "Test",
-			// 	password: "master"
-			// })
+		createUser(obj, {login}, context){
+			console.log(login);
+			const userID = Users.insert({
+				login
+			})
+			return Users.findOne(userID)
 		}
 	}
 };

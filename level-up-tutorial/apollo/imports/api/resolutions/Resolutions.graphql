@@ -10,5 +10,5 @@ type User {
 }
 
 type Mutation {
-	createUser: User
+	createUser(login: String!): User
 }

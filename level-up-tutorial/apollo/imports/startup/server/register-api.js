@@ -7,7 +7,7 @@ import ResolutionsSchema from '../../api/resolutions/Resolutions.graphql'
 // importing resolvers from another page
 import ResolutionsResolvers from '../../api/resolutions/resolvers'
 
-//testSchema is pulling in our different individual queries.
+//testSchema is pulling in our different individual queries....
 const testSchema = 	`
 type Query {
 	hi: String!
@@ -29,7 +29,7 @@ const resolvers = merge(
 	ResolutionsResolvers,
 )
 
-// schema require type defs (which define the shape of our schema) and resolvers.  Guess which part this is
+// schema require type defs (which define the shape of our schema) and resolvers.  Guess which part this is......
 const typeDefs = [
 testSchema,
 ResolutionsSchema
