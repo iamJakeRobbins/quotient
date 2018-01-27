@@ -10,15 +10,18 @@ export default {
 	Query: {
 		users(obk, args, {userId}){
 			console.log(userId);
-			return Users.find({}).fetch();
+			return Users.find({
+				userId
+			}).fetch();
 		}
 	},
 
 	Mutation: {
-		createUser(obj, {login}, context){
+		createUser(obj, {login}, {userId}){
 			console.log(login);
 			const userID = Users.insert({
-				login
+				login,
+				userId
 			})
 			return Users.findOne(userID)
 		}
