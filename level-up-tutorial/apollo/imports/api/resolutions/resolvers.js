@@ -8,7 +8,8 @@ import Users from "./resolutions";
 
 export default {
 	Query: {
-		users(){
+		users(obk, args, {userId}){
+			console.log(userId);
 			return Users.find({}).fetch();
 		}
 	},
