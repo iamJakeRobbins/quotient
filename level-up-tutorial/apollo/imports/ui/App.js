@@ -8,6 +8,7 @@ import CreateUserForm from './components/createUserForm'
 import { Accounts } from "meteor/accounts-base";
 import AccountForm from './components/CreateAccountForm';
 import LoginForm from './components/LoginForm';
+import About from './components/About'
 
 
 
@@ -18,30 +19,17 @@ if(loading) return null
 
 return (
 	<div>
-	<Navbare />
-	{ currentuser._id ? (
-		<button onClick={() => {
-			Meteor.logout();
-			client.resetStore()
-		}}
-		>
-			Logout Now
-		</button>
-	) : (
-		<div>
-			<AccountForm client={client} />
-			<CreateUserForm client={client} />
-		</div>
-	)}
+	<Navbare client={client} currentuser={currentuser} />
 	<h1>{hi.hi}</h1>
- 		<ul>
+ 		{/* <ul>
       {users.map(user => (
         <li key={user._id}>
           {user.login}
         </li>
       ))}
-    </ul>
-	<LoginForm client={client} />
+    </ul> */}
+	{/* <LoginForm client={client} /> */}
+	<About />
 </div>
 )
 }

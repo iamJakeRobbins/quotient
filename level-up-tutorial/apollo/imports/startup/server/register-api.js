@@ -21,7 +21,7 @@ type Query {
 const testResolvers = {
 	Query: {
 		hi() {
-			return "Here's a List of Users for Some Fucking Reason"
+			return "Quotient: communicate better, live better"
 		}
 	},
 }
