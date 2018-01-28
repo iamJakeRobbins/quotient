@@ -9,7 +9,7 @@ import ResolutionsResolvers from '../../api/resolutions/resolvers'
 import UsersSchema from "../../api/users/Users.graphql"
 import UsersResolvers from "../../api/users/resolvers.js"
 
-//testSchema is pulling in our different individual queries....,
+//testSchema is pulling in our different individual queries....,.
 const testSchema = 	`
 type Query {
 	hi: String!
