@@ -1,0 +1,5 @@
+type currentuser {
+	_id: String
+	email: String
+
+}

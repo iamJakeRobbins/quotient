@@ -23,7 +23,7 @@ registerUser = (e) => {
 				ref={(input) => this.email = input} />
 			<input type="password"
 					ref={(input) => this.password = input} />
-				<button type="submit"> Register bitch </button>
+				<button type="submit"> Create Your Account Now </button>
 		</form>
 		)
 	}

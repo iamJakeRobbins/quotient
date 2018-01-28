@@ -12,16 +12,28 @@ import LoginForm from './components/LoginForm';
 
 
 // class App extends React.Component{
-	const App = ({ loading, users, hi, client }) => {
+	const App = ({ loading, users, hi, client, currentuser }) => {
   // dataloading allows Apollo to change gears from loading to loaded
 if(loading) return null
 
 return (
 	<div>
 	<Navbare />
+	{ currentuser._id ? (
+		<button onClick={() => {
+			Meteor.logout();
+			client.resetStore()
+		}}
+		>
+			Logout Now
+		</button>
+	) : (
+		<div>
+			<AccountForm client={client} />
+			<CreateUserForm client={client} />
+		</div>
+	)}
 	<h1>{hi.hi}</h1>
-		<AccountForm client={client} />
-		<CreateUserForm client={client} />
  		<ul>
       {users.map(user => (
         <li key={user._id}>
@@ -30,13 +42,6 @@ return (
       ))}
     </ul>
 	<LoginForm client={client} />
-<button onClick={() => {
-	Meteor.logout();
-	client.resetStore()
-	}}
->
-		Logout Bitch
-</button>
 </div>
 )
 }
@@ -49,7 +54,9 @@ query Users {
     _id
     login
   }
-
+  currentuser{
+    _id
+  }
 }
 `;
 

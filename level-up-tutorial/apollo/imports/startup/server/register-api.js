@@ -6,12 +6,15 @@ import merge from 'lodash/merge';
 import ResolutionsSchema from '../../api/resolutions/Resolutions.graphql'
 // importing resolvers from another page
 import ResolutionsResolvers from '../../api/resolutions/resolvers'
+import UsersSchema from "../../api/users/Users.graphql"
+import UsersResolvers from "../../api/users/resolvers.js"
 
-//testSchema is pulling in our different individual queries....
+//testSchema is pulling in our different individual queries....,
 const testSchema = 	`
 type Query {
 	hi: String!
 	users: [User]
+	currentuser: currentuser
 }
 `
 // simple test resolver to get a page heading
@@ -27,12 +30,14 @@ const testResolvers = {
 const resolvers = merge(
 	testResolvers,
 	ResolutionsResolvers,
+	UsersResolvers
 )
 
 // schema require type defs (which define the shape of our schema) and resolvers.  Guess which part this is......
 const typeDefs = [
 testSchema,
-ResolutionsSchema
+ResolutionsSchema,
+UsersSchema
 ];
 
 // This is creating out actual graphql schema

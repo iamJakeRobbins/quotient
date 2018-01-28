@@ -23,7 +23,7 @@ login = (e) => {
 				ref={(input) => this.email = input} />
 			<input type="password"
 					ref={(input) => this.password = input} />
-				<button type="submit"> Login bitch </button>
+				<button type="submit"> Login Now </button>
 		</form>
 		)
 	}
