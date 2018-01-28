@@ -9,7 +9,6 @@ import Users from "./resolutions";
 export default {
 	Query: {
 		users(obj, args, {userId}){
-			console.log(userId);
 			return Users.find({
 				userId
 			}).fetch();

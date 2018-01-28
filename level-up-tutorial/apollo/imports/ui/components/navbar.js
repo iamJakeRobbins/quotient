@@ -6,12 +6,13 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 import AccountForm from './CreateAccountForm';
 import LoginForm from './LoginForm';
+import './cat.css'
 
 export default class Navbare extends Component {
 	render(){
 	return (
 	<div>
-	<Navbar inverse collapseOnSelect>
+	<Navbar className="header" inverse collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
       <a href="#brand">Quotient Home</a>

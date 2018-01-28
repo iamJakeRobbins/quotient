@@ -1,0 +1,33 @@
+.App {
+	text-align: center;
+}
+.listgroup{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+h1, h2{
+	text-align: center;
+ }
+
+.listitem{
+	text-align: center;
+	width: 45vw;
+}
+
+.header{
+	height: 7vw;
+	background-color: #00BE82;
+	opacity: .75;
+}
+
+
+.footer{
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:7vw;
+   width:100%;
+	 background-color: #00BE82;
+}
