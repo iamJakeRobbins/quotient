@@ -58,8 +58,6 @@ query Users {
     _id
     login
   }
-  # currentuser{
-  #   _id
-  # }
+
 }
 `;

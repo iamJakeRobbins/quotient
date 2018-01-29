@@ -1,33 +1,58 @@
-.App {
-	text-align: center;
-}
+
 .listgroup{
 	display: flex;
 	flex-direction: row;
 	justify-content:center;
 	flex-wrap: wrap;
 }
-h1, h2{
-	text-align: center;
- }
+
 
 .listitem{
 	text-align: center;
 	width: 45vw;
+	font-size: 30px;
+	margin: .5vw;
 }
 
 .header{
+	position: relative;
+	top:0px;
+	color: red;
+	width: 100%;
+	margin: 0px;
 	height: 7vw;
-	background-color: #00BE82;
-	opacity: .75;
+	background-color: black;
+
 }
 
-
 .footer{
+	margin: 0px;
    position:fixed;
-   left:0px;
    bottom:0px;
    height:7vw;
    width:100%;
-	 background-color: #00BE82;
+	 background-color: black;
+}
+
+
+.bodyContainer{
+	color: black;
+	background-color: white;
+	height: 60vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.negativeSpace{
+	background-color: #00BE82;
+	height: 60vw;
+	margin: 0;
+	opacity: .5;
+}
+
+h1, h2{
+	text-align: center;
+	color: black;
+ }
+h1{
+	margin: 0
 }
