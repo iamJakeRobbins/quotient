@@ -10,11 +10,12 @@ import { Accounts } from "meteor/accounts-base";
 
 import AccountForm from './components/CreateAccountForm';
 import LoginForm from './components/LoginForm';
-import About from './components/About'
-import Categories from './components/categories'
-import Footer from './components/Footer'
-import QuoteList from './components/QuoteList'
-import './components/cat.css'
+import About from './components/About';
+import Categories from './components/categories';
+import Footer from './components/Footer';
+import QuoteList from './components/QuoteList';
+import QuoteView from './components/QuoteView';
+import './components/cat.css';
 
 
 // class App extends React.Component{
@@ -28,10 +29,11 @@ return (
 	<div className="bodyContainer">
 		<h1>Quotient: Communicate Better; Live Better</h1>
 			<div>
-				{!currentuser._id ? ( <About /> )
+				{/* {!currentuser._id ? ( <About /> )
 					: ( <Categories /> )
-				}
-				<QuoteList />
+				} */}
+				{/* <QuoteList /> */}
+				<QuoteView />
 			</div>
 	</div>
 	</div>
