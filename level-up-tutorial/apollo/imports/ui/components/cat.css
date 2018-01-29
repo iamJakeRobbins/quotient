@@ -21,7 +21,7 @@
 	width: 100%;
 	margin: 0px;
 	height: 7vw;
-	background-color: black;
+	background-color: grey;
 
 }
 
@@ -31,7 +31,7 @@
    bottom:0px;
    height:7vw;
    width:100%;
-	 background-color: black;
+	 background-color: grey;
 }
 
 
@@ -61,5 +61,15 @@ h1, h2{
 	color: black;
  }
 h1{
-	margin: 0
+	margin: 0;
+	margin-bottom: 2vw;
+}
+
+.quoteIntBox{
+	display: flex;
+}
+
+.about{
+	margin-left: 20vw;
+	margin-right: 20vw;
 }

@@ -17,10 +17,10 @@ export default class QuoteView extends Component{
 		</FormGroup>
 		<ListGroup className='listgroup'>
 			<ListGroupItem a href="#">
-				{/* <h5>
-					Enter a meaningful bit of contemplation here, this is just a sample but if we were doing this for real I would expect you to be thinking on it for a while first.  Also, you should probably check your grammar silly. <br />
+				<h5>
+					this is a sample interpretation of an existing quote <br />
 					by: jrobbins
-				</h5> */}
+				</h5>
 			</ListGroupItem>
 			</ListGroup>
 <ListGroup className='listgroup'>

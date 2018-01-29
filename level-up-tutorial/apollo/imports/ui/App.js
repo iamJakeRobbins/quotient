@@ -15,6 +15,7 @@ import Categories from './components/categories';
 import Footer from './components/Footer';
 import QuoteList from './components/QuoteList';
 import QuoteView from './components/QuoteView';
+import InterpretationView from './components/InterpretationView'
 import './components/cat.css';
 
 
@@ -29,11 +30,12 @@ return (
 	<div className="bodyContainer">
 		<h1>Quotient: Communicate Better; Live Better</h1>
 			<div>
-				{/* {!currentuser._id ? ( <About /> )
+				{!currentuser._id ? ( <About /> )
 					: ( <Categories /> )
-				} */}
+				}
 				{/* <QuoteList /> */}
-				<QuoteView />
+				{/* <QuoteView /> */}
+				{/* <InterpretationView /> */}
 			</div>
 	</div>
 	</div>
