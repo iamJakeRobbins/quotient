@@ -12,23 +12,23 @@ export default class QuoteView extends Component{
 		</ListGroup>
 		<FormGroup className="interpretationbox" controlId="formControlsTextarea">
 			<ControlLabel>Interpret Away!</ControlLabel>
-			<FormControl className="form-control" componentClass="textarea" placeholder="Enter your Interpretation of this quote here " />
+			<FormControl className="listitem" componentClass="textarea" placeholder="Enter your Interpretation of this quote here " />
 			<Button type="submit">Submit your Interpretation</Button>
 		</FormGroup>
-		<ListGroup className='listgroup'>
+		<ListGroup className='listitem'>
 			<ListGroupItem a href="#">
-				<h5>
+				<h4>
 					this is a sample interpretation of an existing quote <br />
 					by: jrobbins
-				</h5>
+				</h4>
 			</ListGroupItem>
 			</ListGroup>
-<ListGroup className='listgroup'>
+<ListGroup className='listitem'>
 	<ListGroupItem a href="#">
-		<h5>
+		<h4>
 			Education would be much more effective if its purpose was to ensure that by the time they leave school every boy and girl should know how much they do not know, and be imbued with a lifelong desire to know it. <br />
 			by: WriTerGuy123
-		</h5>
+		</h4>
 	</ListGroupItem>
 	</ListGroup>
 		</div>

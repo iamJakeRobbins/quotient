@@ -30,16 +30,16 @@ return (
 	<div className="bodyContainer">
 		<h1>Quotient: Communicate Better; Live Better</h1>
 			<div>
-				{!currentuser._id ? ( <About /> )
+				{/* {!currentuser._id ? ( <About /> )
 					: ( <Categories /> )
-				}
-				{/* <QuoteList /> */}
+				} */}
+				<QuoteList />
 				{/* <QuoteView /> */}
 				{/* <InterpretationView /> */}
 			</div>
 	</div>
 	</div>
-	<Footer />
+	{/* <Footer /> */}
 </div>
 
 )

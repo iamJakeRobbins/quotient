@@ -25,7 +25,7 @@ export default class InterpretationView extends Component {
 				<Button type="submit">Submit</Button>
 			</FormGroup>
 
-			<ListGroup className='listgroup'>
+			<ListGroup className='listitem'>
 				<ListGroupItem a href="#">
 					<h5>
 						This is just a sample critique of an existing interpretation

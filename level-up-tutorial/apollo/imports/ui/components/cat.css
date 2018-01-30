@@ -4,6 +4,7 @@
 	flex-direction: row;
 	justify-content:center;
 	flex-wrap: wrap;
+	color: black;
 }
 
 
@@ -12,48 +13,49 @@
 	width: 45vw;
 	font-size: 30px;
 	margin: .5vw;
+	color: black;
 }
 
 .header{
-	position: relative;
+	position: fixed;
 	top:0px;
-	color: red;
 	width: 100%;
 	margin: 0px;
 	height: 7vw;
 	background-color: rgb(134, 206, 183);
-
+	border-color: rgb(134, 206, 183);
+	z-index: 1;
 }
 
 .footer{
 	margin: 0px;
-   position:fixed;
-   bottom:0px;
-   height:7vw;
-   width:100%;
-	 background-color: rgb(134, 206, 183)
+  position:fixed;
+ 	bottom:0px;
+  height:7vw;
+ 	width:100%;
+ 	background-color: rgb(134, 206, 183)
 }
-
 
 .bodyContainer{
 	color: black;
-	background-color: lightgray;
-	height: 60vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
+	background-color: white;
+	height: 100vw;
+	margin-top: 7vw;
+	margin-left: 13vw;
+	margin-right: 13vw;
 }
 
 .interpretationbox{
-	margin-left: 12vw;
-	margin-right: 12vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
 	height: 15vw;
 }
 
 .negativeSpace{
-	background-color: rgb(204, 216, 166);
-	height: 60vw;
+	background-color: lightgray;
+	height: 100vw;
 	margin: 0;
-	opacity: .5;
+
 }
 
 h1, h2{
@@ -65,8 +67,13 @@ h1{
 	margin-bottom: 2vw;
 }
 
+p{
+	font-size: 20px;
+}
+
 .quoteIntBox{
 	display: flex;
+	justify-content: space-between;
 }
 
 .about{
